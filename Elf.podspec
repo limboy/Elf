@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "Elf"
-s.version      = "0.5.0"
+s.version      = "0.5.1"
 s.summary      = "a lightweight, pure-swift router for url handling"
 
 # This description is used to generate tags and improve search results.

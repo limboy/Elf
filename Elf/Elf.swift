@@ -24,7 +24,7 @@ public typealias NotFoundHandler = (_ url: String) -> Void
 
 public class Elf {
     
-    static let instance = Elf()
+    public static let instance = Elf()
     
     private init() {}
     
