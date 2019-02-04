@@ -9,7 +9,7 @@
 import Foundation
 
 // handler instance will be called when url matches pattern
-protocol Handler: class {
+public protocol Handler: class {
     // use this function to convert params and queryParams into instance properties.
     // then you can use these properties in `handle` method
     func convert(params:Dictionary<String, String>, queryParams: Dictionary<String, String>)
@@ -20,9 +20,9 @@ protocol Handler: class {
     func handle()
 }
 
-typealias NotFoundHandler = (_ url: String) -> Void
+public typealias NotFoundHandler = (_ url: String) -> Void
 
-class Elf {
+public class Elf {
     
     static let instance = Elf()
     
